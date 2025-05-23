@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FAFAFA">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customise Alerts"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Vibration Toggle -->
+    <Switch
+        android:id="@+id/vibrationSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vibration Alerts"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:checked="true"/>
+
+    <!-- Sound Toggle -->
+    <Switch
+        android:id="@+id/soundSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sound Alerts"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:checked="true"/>
+
+    <!-- Alert Volume -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Alert Volume"
+            android:textSize="20sp"/>
+
+        <SeekBar
+            android:id="@+id/volumeSeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:max="10"
+            android:progress="8"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/emergency_contacts"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="24dp" />
+
+    <!-- RecyclerView for contacts -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contactsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/title"
+        android:layout_above="@id/addContactButton"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Add Contact Button -->
+    <LinearLayout
+        android:id="@+id/addContactButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/removeContactButton"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_button_blue"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_input_add"
+            android:contentDescription="@string/add_icon_description"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_contact"
+            android:textColor="#FF000000"
+            android:textSize="24sp"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+    <!-- Remove Contact Button -->
+    <LinearLayout
+        android:id="@+id/removeContactButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/backButton"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_button_red"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_delete"
+            android:contentDescription="@string/remove_icon_description"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remove_contact"
+            android:textColor="#FF000000"
+            android:textSize="24sp"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+    <!-- Back Button -->
+    <LinearLayout
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_button_green"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="@string/back_icon_description"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textColor="#FF000000"
+            android:textSize="24sp"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="voicePitchSeekBar" type="id" />
+    <item name="voiceSpeedSeekBar" type="id" />
+    <item name="testVoiceButton" type="id" />
+</resources>

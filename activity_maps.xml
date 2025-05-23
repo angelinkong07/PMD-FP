@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Google Map Fragment -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Navigation Overlay Info -->
+    <LinearLayout
+        android:id="@+id/navigationOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#CC000000"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/navInfoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loading_route"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:contentDescription="@string/nav_info_desc"
+            android:importantForAccessibility="yes" />
+
+        <Button
+            android:id="@+id/cancelNavigationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_navigation"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF4444"
+            android:layout_marginTop="10dp"
+            android:importantForAccessibility="yes"
+            android:contentDescription="@string/cancel_nav_button_desc" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Cazulang Navigation</string>
+    <string name="settings_button_description">Settings</string>
+    <string name="profile_button_description">User profile</string>
+    <string name="voice_command_button_description">Press and hold to speak your destination</string>
+    <string name="welcome_prompt">Where would you like to go?</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="sign_up_button">Sign Up</string>
+    <string name="create_account_button">Create an Account</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_maps_key">AIzaSyBNCynZlQ1Eg4TWzZ1coc-gCwX7MT_5Q30</string>
+    <string name="loading_route">Loading route...</string>
+    <string name="nav_info_desc">Navigation Information</string>
+    <string name="cancel_navigation">Cancel Navigation</string>
+    <string name="cancel_nav_button_desc">Cancel Navigation Button</string>
+    <string name="no_destination">No destination set.</string>
+    <string name="failed_location">Failed to get current location.</string>
+    <string name="location_not_found">Location not found.</string>
+    <string name="error_getting_coordinates">Error getting destination coordinates.</string>
+    <string name="eta_format">ETA: %1$s (%2$s)</string>
+    <string name="no_route_found">No route found.</string>
+    <string name="route_parse_error">Error parsing route data.</string>
+    <string name="emergency_contacts">Emergency Contacts</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="remove_contact">Remove Contact</string>
+    <string name="back">Back</string>
+    <string name="add_icon_description">Add contact icon</string>
+    <string name="remove_icon_description">Remove contact icon</string>
+    <string name="back_icon_description">Back arrow icon</string>
+    <string name="title_my_information">My Information</string>
+    <string name="profile_picture_description">Profile picture</string>
+    <string name="edit_profile_description">Edit profile</string>
+    <string name="label_name">Name:</string>
+    <string name="label_phone_number">Phone Number:</string>
+    <string name="label_address">Address:</string>
+    <string name="label_medical_information">Medical Information:</string>
+    <string name="save_information">Save Information</string>
+    <string name="logout">Log Out</string>
+    <string name="app_logo_description">Cazulang app logo</string>
+
+    <!-- Default field values can also go here -->
+    <string name="default_name">Angelin Kong</string>
+    <string name="default_phone">012-5912708</string>
+    <string name="default_address">Menara U, Seksyen 13, Jalan Boling Padang, Shah Alam, Selangor</string>
+    <string name="default_medical_info">Visually Impaired</string>
+</resources>

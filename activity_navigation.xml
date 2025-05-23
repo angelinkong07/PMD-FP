@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_navigation.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/navBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_image"/>
+
+    <!-- Navigation Info Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#99000000"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/navInstruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed straight for 50 meters"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/navDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estimated time: 5 minutes"
+            android:textColor="#CCCCCC"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
